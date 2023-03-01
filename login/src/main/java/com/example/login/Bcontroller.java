@@ -24,13 +24,32 @@ import javafx.scene.control.Button;
 import java.io.IOException;
 
 public class Bcontroller {
+
     @FXML
     private Button back;
-    public void setOnAction(ActionEvent event) throws IOException
+
+    @FXML
+    private Button workingstatus_bm;
+
+    static HelloApplication scene2;
+
+    public static HelloApplication appState(HelloApplication obj){
+        scene2 = obj;
+        return obj;
+    }
+
+
+
+    public void logOutButton(ActionEvent event) throws IOException
     {
-        HelloApplication scene2 = new HelloApplication();
         scene2.next("sceneA.fxml");
 
     }
+
+    public void addWorkingStatusButton(ActionEvent event) throws IOException
+    {
+        scene2.next("sceneAddWorkingStatus.fxml");
+    }
+
 
 }

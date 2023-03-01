@@ -20,6 +20,7 @@ public class HelloApplication extends Application  {
         Parent root = FXMLLoader.load(getClass().getResource("sceneA.fxml"));
         stage.setScene(new Scene(root, 800, 500));
         stage.setTitle("Alumni"); //stage title
+        Bcontroller.appState(this);
         stage.show();
     }
 

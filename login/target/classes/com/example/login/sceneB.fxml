@@ -8,23 +8,25 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.Bcontroller">
    <left>
       <VBox prefHeight="400.0" prefWidth="151.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="67.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
             <Separator prefHeight="11.0" prefWidth="156.0" />
             <Button mnemonicParsing="false" text="Add Alumni" />
-            <Separator prefHeight="39.0" prefWidth="128.0" />
+            <Separator prefHeight="21.0" prefWidth="152.0" />
             <Button mnemonicParsing="false" text="Update Alumni" />
-            <Separator prefHeight="41.0" prefWidth="128.0" />
+            <Separator prefHeight="39.0" prefWidth="128.0" />
             <Button mnemonicParsing="false" text="Add Company" />
-            <Separator prefHeight="37.0" prefWidth="128.0" />
+            <Separator prefHeight="29.0" prefWidth="152.0" />
             <Button mnemonicParsing="false" text="Add Jobtitle" />
+            <Separator prefHeight="37.0" prefWidth="128.0" />
+            <Button fx:id="workingstatus_bm" mnemonicParsing="false" onAction="#addWorkingStatusButton" text="Add Working Status" />
             <Separator prefHeight="27.0" prefWidth="128.0" />
-            <Button mnemonicParsing="false" text="Add Working Status" />
-            <Separator prefHeight="25.0" prefWidth="128.0" />
             <Button mnemonicParsing="false" prefHeight="17.0" prefWidth="81.0" text="Reports" />
+            <Separator prefHeight="22.0" prefWidth="152.0" />
+            <Button fx:id="back" mnemonicParsing="false" onAction="#logOutButton" text="Logout" />
          </children>
       </VBox>
    </left>
@@ -33,7 +35,7 @@
          <children>
             <ImageView fitHeight="399.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true" scaleZ="-1.0" />
             <ImageView fitHeight="63.0" fitWidth="82.0" layoutX="364.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="188.0" layoutY="63.0" text="Main Menu" />
+            <Label layoutX="189.0" layoutY="23.0" text="Main Menu" />
          </children>
       </AnchorPane>
    </center>
